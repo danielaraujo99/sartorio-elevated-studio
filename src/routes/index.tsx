@@ -67,7 +67,7 @@ function Home() {
                 <Link to="/agendar">AGENDAR HORÁRIO <ArrowRight className="ml-2 h-4 w-4" /></Link>
               </Button>
               <Button asChild size="lg" variant="outline" className="h-12 px-7 border-background/30 bg-transparent text-background hover:bg-background/10 hover:text-background tracking-[0.22em] text-[11px] font-semibold rounded-md">
-                <Link to="/servicos">VER SERVIÇOS</Link>
+                <Link to="/galeria">VER TRANSFORMAÇÕES</Link>
               </Button>
             </div>
 
