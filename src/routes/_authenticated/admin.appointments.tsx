@@ -217,7 +217,7 @@ function DetailRow({ icon: Icon, label, value }: { icon: any; label: string; val
       <Icon className="mt-0.5 h-4 w-4 shrink-0 text-admin-accent" />
       <div className="min-w-0">
         <div className="text-[10px] font-semibold uppercase tracking-[0.18em] text-muted-foreground">{label}</div>
-        <div className="text-sm font-medium capitalize-first">{value}</div>
+        <div className="text-sm font-medium first-letter:uppercase">{value}</div>
       </div>
     </div>
   );
