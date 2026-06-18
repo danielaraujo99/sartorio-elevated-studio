@@ -1,5 +1,5 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import { Instagram, MapPin, MessageCircle, Phone, Clock, Mail, ArrowRight } from "lucide-react";
+import { Instagram, MapPin, MessageCircle, Clock, Mail, ArrowRight } from "lucide-react";
 import { Header } from "@/components/site/Header";
 import { Footer } from "@/components/site/Footer";
 import { Button } from "@/components/ui/button";
@@ -167,8 +167,6 @@ function ContatoPage() {
           </Button>
         </div>
       </section>
-
-      <Phone className="hidden" />
 
       <Footer />
     </div>
