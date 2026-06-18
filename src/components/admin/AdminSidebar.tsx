@@ -4,7 +4,7 @@ import {
   Sidebar, SidebarContent, SidebarFooter, SidebarHeader, SidebarMenu, SidebarMenuButton, SidebarMenuItem,
   SidebarGroup, SidebarGroupLabel, SidebarGroupContent,
 } from "@/components/ui/sidebar";
-import { Logo, Wordmark } from "@/components/site/Logo";
+
 import { Button } from "@/components/ui/button";
 
 const main = [
