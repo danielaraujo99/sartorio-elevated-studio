@@ -12,7 +12,6 @@ import { Route as rootRouteImport } from './routes/__root'
 import { Route as SobreRouteImport } from './routes/sobre'
 import { Route as ServicosRouteImport } from './routes/servicos'
 import { Route as GaleriaRouteImport } from './routes/galeria'
-import { Route as ContatoRouteImport } from './routes/contato'
 import { Route as AuthRouteImport } from './routes/auth'
 import { Route as AgendarRouteImport } from './routes/agendar'
 import { Route as AuthenticatedRouteRouteImport } from './routes/_authenticated/route'
@@ -40,11 +39,6 @@ const ServicosRoute = ServicosRouteImport.update({
 const GaleriaRoute = GaleriaRouteImport.update({
   id: '/galeria',
   path: '/galeria',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const ContatoRoute = ContatoRouteImport.update({
-  id: '/contato',
-  path: '/contato',
   getParentRoute: () => rootRouteImport,
 } as any)
 const AuthRoute = AuthRouteImport.update({
@@ -121,7 +115,6 @@ export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/agendar': typeof AgendarRoute
   '/auth': typeof AuthRoute
-  '/contato': typeof ContatoRoute
   '/galeria': typeof GaleriaRoute
   '/servicos': typeof ServicosRoute
   '/sobre': typeof SobreRoute
@@ -139,7 +132,6 @@ export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/agendar': typeof AgendarRoute
   '/auth': typeof AuthRoute
-  '/contato': typeof ContatoRoute
   '/galeria': typeof GaleriaRoute
   '/servicos': typeof ServicosRoute
   '/sobre': typeof SobreRoute
@@ -158,7 +150,6 @@ export interface FileRoutesById {
   '/_authenticated': typeof AuthenticatedRouteRouteWithChildren
   '/agendar': typeof AgendarRoute
   '/auth': typeof AuthRoute
-  '/contato': typeof ContatoRoute
   '/galeria': typeof GaleriaRoute
   '/servicos': typeof ServicosRoute
   '/sobre': typeof SobreRoute
@@ -178,7 +169,6 @@ export interface FileRouteTypes {
     | '/'
     | '/agendar'
     | '/auth'
-    | '/contato'
     | '/galeria'
     | '/servicos'
     | '/sobre'
@@ -196,7 +186,6 @@ export interface FileRouteTypes {
     | '/'
     | '/agendar'
     | '/auth'
-    | '/contato'
     | '/galeria'
     | '/servicos'
     | '/sobre'
@@ -214,7 +203,6 @@ export interface FileRouteTypes {
     | '/_authenticated'
     | '/agendar'
     | '/auth'
-    | '/contato'
     | '/galeria'
     | '/servicos'
     | '/sobre'
@@ -234,7 +222,6 @@ export interface RootRouteChildren {
   AuthenticatedRouteRoute: typeof AuthenticatedRouteRouteWithChildren
   AgendarRoute: typeof AgendarRoute
   AuthRoute: typeof AuthRoute
-  ContatoRoute: typeof ContatoRoute
   GaleriaRoute: typeof GaleriaRoute
   ServicosRoute: typeof ServicosRoute
   SobreRoute: typeof SobreRoute
@@ -262,13 +249,6 @@ declare module '@tanstack/react-router' {
       path: '/galeria'
       fullPath: '/galeria'
       preLoaderRoute: typeof GaleriaRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/contato': {
-      id: '/contato'
-      path: '/contato'
-      fullPath: '/contato'
-      preLoaderRoute: typeof ContatoRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/auth': {
@@ -404,7 +384,6 @@ const rootRouteChildren: RootRouteChildren = {
   AuthenticatedRouteRoute: AuthenticatedRouteRouteWithChildren,
   AgendarRoute: AgendarRoute,
   AuthRoute: AuthRoute,
-  ContatoRoute: ContatoRoute,
   GaleriaRoute: GaleriaRoute,
   ServicosRoute: ServicosRoute,
   SobreRoute: SobreRoute,
