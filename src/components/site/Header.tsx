@@ -10,7 +10,6 @@ const links = [
   { to: "/servicos", label: "Serviços" },
   { to: "/galeria", label: "Galeria" },
   { to: "/sobre", label: "Sobre" },
-  { to: "/contato", label: "Contato" },
 ] as const;
 
 export function Header({ variant = "auto" }: { variant?: "auto" | "dark" | "light" }) {

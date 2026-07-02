@@ -26,7 +26,7 @@ export function Footer() {
               <li><Link to="/servicos" className="hover:text-gold-soft">Serviços</Link></li>
               <li><Link to="/galeria" className="hover:text-gold-soft">Galeria</Link></li>
               <li><Link to="/sobre" className="hover:text-gold-soft">Sobre o estúdio</Link></li>
-              <li><Link to="/contato" className="hover:text-gold-soft">Contato</Link></li>
+              
               <li><Link to="/agendar" className="hover:text-gold-soft">Agendar horário</Link></li>
             </ul>
           </div>

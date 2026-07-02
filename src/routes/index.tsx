@@ -305,7 +305,7 @@ function Home() {
                 <Link to="/agendar">AGENDAR AGORA <ArrowRight className="ml-2 h-4 w-4" /></Link>
               </Button>
               <Button asChild size="lg" variant="outline" className="h-12 w-full justify-center lg:w-[260px] border-background/30 bg-transparent text-background hover:bg-background/10 hover:text-background tracking-[0.22em] text-[11px] font-semibold rounded-md">
-                <Link to="/contato"><MapPin className="mr-2 h-4 w-4" /> COMO CHEGAR</Link>
+                <a href="https://www.google.com/maps?q=Cachoeiro+de+Itapemirim+ES" target="_blank" rel="noreferrer"><MapPin className="mr-2 h-4 w-4" /> COMO CHEGAR</a>
               </Button>
             </div>
           </div>
